@@ -1,6 +1,7 @@
 package me.hubailmn;
 
 import me.hubailmn.utils.CC;
+import me.hubailmn.utils.Exercises;
 import me.hubailmn.utils.StringFormat;
 import org.reflections.Reflections;
 import org.reflections.scanners.SubTypesScanner;
@@ -95,6 +96,11 @@ public class Main {
 
         Class<?> selectedClass = indexedClasses.get(choice - 1);
         System.out.println(CC.BRIGHT_BLUE + "\nRunning: " + selectedClass.getName() + CC.RESET);
+
+        if (selectedClass.isAnnotationPresent(Exercises.class)) {
+            Exercises exercisesAnnotation = selectedClass.getAnnotation(Exercises.class);
+            System.out.println(CC.BRIGHT_YELLOW + "\nDescription: \n\t" + CC.RESET + exercisesAnnotation.description().replaceAll(", ", ",\n\t") + "\n");
+        }
 
         try {
             Method mainMethod = selectedClass.getMethod("main", String[].class);
