@@ -1,7 +1,14 @@
 package me.hubailmn.Labs.Lab1.practice;
 
+import me.hubailmn.utils.Exercises;
+
 import java.util.Scanner;
 
+@Exercises(
+        name = "Average weekly Temperature",
+        description = "Prompts the user to enter daily temperatures for a week, calculates the weekly average, " +
+                "and displays whether each day's temperature is above, below, or equal to the average."
+)
 public class ArrayOfTemperatures {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);

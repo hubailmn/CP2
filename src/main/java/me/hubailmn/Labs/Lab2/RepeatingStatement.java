@@ -1,8 +1,16 @@
 package me.hubailmn.Labs.Lab2;
 
+import me.hubailmn.utils.Exercises;
+
 import java.util.Scanner;
 
-public class Exercise1RepeatingStatement {
+@Exercises(
+        exercise = 1,
+        name = "Repeating Statement Recursively",
+        description = "Uses recursion to print 'Hello World' a specified number of times based on user input."
+)
+
+public class RepeatingStatement {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

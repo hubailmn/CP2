@@ -1,6 +1,14 @@
 package me.hubailmn.Labs.Lab1;
 
-public class Exercise3PrintingArray {
+import me.hubailmn.utils.Exercises;
+
+@Exercises(
+        exercise = 3,
+        name = "Printing Array Elements",
+        description = "Initializes an array of integers and prints each element using an enhanced for-loop."
+)
+
+public class PrintingArray {
 
     public static void main(String[] args) {
 

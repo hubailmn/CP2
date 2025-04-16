@@ -1,12 +1,20 @@
-package me.hubailmn.Labs.Lab3.practice;
+package me.hubailmn.Labs.Lab3;
 
+import me.hubailmn.utils.Exercises;
 import me.hubailmn.utils.ProjectUtil;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+@Exercises(
+        exercise = 4,
+        name = "Transaction Reader",
+        description = "Reads a transaction file, parses each line for SKU, quantity, price, and description, " +
+                "then calculates and prints the total sales. Demonstrates file reading, string parsing, and basic arithmetic."
+)
 public class TransactionReader {
+
 
     public static void main(String[] args) {
         String fileName = ProjectUtil.getUNIVERSITY_COMPUTER_PROJECT_PATH() + "Lab3\\resources\\Transactions.txt";

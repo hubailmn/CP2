@@ -1,8 +1,18 @@
 package me.hubailmn.Labs.Lab1;
 
+import me.hubailmn.utils.Exercises;
+
 import java.util.Scanner;
 
-public class Exercise2CashOut {
+@Exercises(
+        exercise = 2,
+        name = "Cash Out Calculator",
+        description = "Simulates a simple cashier system where the user enters item prices, calculates the total cost, " +
+                "accepts payments until the full amount is paid, and returns the correct change if applicable."
+
+)
+
+public class CashOut {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);

@@ -1,12 +1,20 @@
-package me.hubailmn.Labs.Lab3.practice.input;
+package me.hubailmn.Labs.Lab3.input;
 
+import me.hubailmn.utils.Exercises;
 import me.hubailmn.utils.ProjectUtil;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+@Exercises(
+        exercise = 2,
+        name = "Text File Input Demo",
+        description = "Reads a text file line by line using a Scanner, printing its contents to the console. " +
+                "Demonstrates basic file input handling and error management."
+)
 public class TextFileInputDemo {
+
     public static void main(String[] args) {
         String fileName = ProjectUtil.getUNIVERSITY_COMPUTER_PROJECT_PATH() + "Lab3\\resources\\out.txt";
 

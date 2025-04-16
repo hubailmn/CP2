@@ -1,5 +1,12 @@
 package me.hubailmn.Labs.Lab2.practice;
 
+import me.hubailmn.utils.Exercises;
+
+@Exercises(
+        name = "Recursive Countdown",
+        description = "Demonstrates a simple recursive method that counts down from a given number to 1 and prints each step."
+)
+
 public class RecursiveCountdown {
     public static void main(String[] args) {
 

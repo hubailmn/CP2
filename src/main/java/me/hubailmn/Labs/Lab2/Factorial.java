@@ -1,8 +1,15 @@
 package me.hubailmn.Labs.Lab2;
 
+import me.hubailmn.utils.Exercises;
+
 import java.util.Scanner;
 
-public class Exercise2Factorial {
+@Exercises(
+        exercise = 2,
+        name = "Recursive Factorial Calculation",
+        description = "Prompts the user for a number and uses recursion to calculate and display its factorial."
+)
+public class Factorial {
 
     public static void main(String[] args) {
 

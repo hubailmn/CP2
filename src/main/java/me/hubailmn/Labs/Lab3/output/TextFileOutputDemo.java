@@ -1,12 +1,20 @@
-package me.hubailmn.Labs.Lab3.practice.output;
+package me.hubailmn.Labs.Lab3.output;
 
+import me.hubailmn.utils.Exercises;
 import me.hubailmn.utils.ProjectUtil;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
+@Exercises(
+        exercise = 3,
+        name = "Text File Output Demo",
+        description = "Prompts the user to input three lines of text and writes them to a file, each line prefixed with a number. " +
+                "Demonstrates basic file output handling using PrintWriter."
+)
 public class TextFileOutputDemo {
+
 
     public static void main(String[] args) {
         String fileName = ProjectUtil.getUNIVERSITY_COMPUTER_PROJECT_PATH() + "Lab3\\resources\\out.txt";

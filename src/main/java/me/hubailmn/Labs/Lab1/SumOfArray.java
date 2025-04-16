@@ -1,8 +1,17 @@
 package me.hubailmn.Labs.Lab1;
 
+import me.hubailmn.utils.Exercises;
+
 import java.util.Scanner;
 
-public class Exercise1SumOfArray {
+@Exercises(
+        exercise = 1,
+        name = "Sum of Array Elements",
+        description = "Prompts the user to enter a specified number of numeric values, stores them in an array, " +
+                "and calculates the total sum of the elements."
+
+)
+public class SumOfArray {
 
     public static void main(String[] args) {
 
