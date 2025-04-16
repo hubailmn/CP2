@@ -99,7 +99,7 @@ public class Main {
 
         if (selectedClass.isAnnotationPresent(Exercises.class)) {
             Exercises exercisesAnnotation = selectedClass.getAnnotation(Exercises.class);
-            System.out.println(CC.BRIGHT_YELLOW + "\nDescription: \n\t" + CC.RESET + exercisesAnnotation.description().replaceAll(", ", ",\n\t") + "\n");
+            System.out.println(CC.BRIGHT_YELLOW + "\nDescription: \n\t" + CC.RESET + exercisesAnnotation.description().replaceAll(", ", ",\n\t").replaceAll("\\. ", ".\n\n\t") + "\n");
         }
 
         try {

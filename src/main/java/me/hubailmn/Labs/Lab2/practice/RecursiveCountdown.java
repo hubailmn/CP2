@@ -17,9 +17,10 @@ public class RecursiveCountdown {
     public static void countDown(int num) {
         if (num <= 0) {
             System.out.println();
+            return;
         }
 
-        System.out.print(num);
+        System.out.println(num);
         countDown(num - 1);
 
     }
