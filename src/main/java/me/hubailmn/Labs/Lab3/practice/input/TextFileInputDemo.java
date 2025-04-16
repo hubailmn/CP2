@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class TextFileInputDemo {
     public static void main(String[] args) {
-        String fileName = ProjectUtil.getPROJECT_PATH() + "Lab3\\resources\\out.txt";
+        String fileName = ProjectUtil.getUNIVERSITY_COMPUTER_PROJECT_PATH() + "Lab3\\resources\\out.txt";
 
         Scanner inputStream = null;
         System.out.println("The file " + fileName + "\ncontains the following lines:\n");

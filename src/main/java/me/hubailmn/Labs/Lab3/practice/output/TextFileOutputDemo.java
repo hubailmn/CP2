@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class TextFileOutputDemo {
 
     public static void main(String[] args) {
-        String fileName = ProjectUtil.getPROJECT_PATH() + "Lab3\\resources\\out.txt";
+        String fileName = ProjectUtil.getUNIVERSITY_COMPUTER_PROJECT_PATH() + "Lab3\\resources\\out.txt";
 
         PrintWriter outputStream = null;
 

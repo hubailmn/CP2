@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class TransactionReader {
 
     public static void main(String[] args) {
-        String fileName = ProjectUtil.getPROJECT_PATH() + "Lab3\\resources\\Transactions.txt";
+        String fileName = ProjectUtil.getUNIVERSITY_COMPUTER_PROJECT_PATH() + "Lab3\\resources\\Transactions.txt";
 
         try {
             Scanner inputStream = new Scanner(new File(fileName));

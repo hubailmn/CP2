@@ -17,7 +17,7 @@ public class TextFileInputDemo2 {
         System.out.println("The file " + fileName + "\ncontains the following lines:\n");
 
         try {
-            inputStream = new Scanner(new File(ProjectUtil.getPROJECT_PATH() + "Lab3\\resources\\" + fileName));
+            inputStream = new Scanner(new File(ProjectUtil.getUNIVERSITY_COMPUTER_PROJECT_PATH() + "Lab3\\resources\\" + fileName));
         } catch (FileNotFoundException e) {
             System.out.println("Error opening the file " + fileName);
             System.exit(0);
