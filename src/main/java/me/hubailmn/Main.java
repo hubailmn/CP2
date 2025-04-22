@@ -1,7 +1,7 @@
 package me.hubailmn;
 
 import me.hubailmn.utils.CC;
-import me.hubailmn.utils.Exercises;
+import me.hubailmn.utils.Exercise;
 import me.hubailmn.utils.StringFormat;
 import org.reflections.Reflections;
 import org.reflections.scanners.SubTypesScanner;
@@ -34,7 +34,7 @@ public class Main {
                         .addScanners(new TypeAnnotationsScanner(), new SubTypesScanner(false))
         );
 
-        Set<Class<?>> allClasses = reflections.getTypesAnnotatedWith(Exercises.class);
+        Set<Class<?>> allClasses = reflections.getTypesAnnotatedWith(Exercise.class);
         Map<String, List<Class<?>>> packageToClasses = new TreeMap<>();
 
         for (Class<?> clazz : allClasses) {
@@ -74,9 +74,9 @@ public class Main {
                 indexedClasses.add(clazz);
 
                 String className = clazz.getSimpleName();
-                if (clazz.isAnnotationPresent(Exercises.class)) {
-                    Exercises exercisesAnnotation = clazz.getAnnotation(Exercises.class);
-                    className = exercisesAnnotation.name();
+                if (clazz.isAnnotationPresent(Exercise.class)) {
+                    Exercise exerciseAnnotation = clazz.getAnnotation(Exercise.class);
+                    className = exerciseAnnotation.name();
                 }
 
                 String formattedName = StringFormat.formatClassName(className);
@@ -105,9 +105,9 @@ public class Main {
         Class<?> selectedClass = indexedClasses.get(choice - 1);
         System.out.println(CC.BRIGHT_BLUE + "\nRunning: " + selectedClass.getName() + CC.RESET);
 
-        if (selectedClass.isAnnotationPresent(Exercises.class)) {
-            Exercises exercisesAnnotation = selectedClass.getAnnotation(Exercises.class);
-            System.out.println(CC.BRIGHT_YELLOW + "\nDescription: \n\t" + CC.RESET + exercisesAnnotation.description().replaceAll(", ", ",\n\t").replaceAll("\\. ", ".\n\n\t") + "\n");
+        if (selectedClass.isAnnotationPresent(Exercise.class)) {
+            Exercise exerciseAnnotation = selectedClass.getAnnotation(Exercise.class);
+            System.out.println(CC.BRIGHT_YELLOW + "\nDescription: \n\t" + CC.RESET + exerciseAnnotation.description().replaceAll(", ", ",\n\t").replaceAll("\\. ", ".\n\n\t") + "\n");
         }
 
         try {

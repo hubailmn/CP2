@@ -1,13 +1,13 @@
 package me.hubailmn.Labs.Lab3;
 
-import me.hubailmn.utils.Exercises;
+import me.hubailmn.utils.Exercise;
 import me.hubailmn.utils.ProjectUtil;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-@Exercises(
+@Exercise(
         exercise = 4,
         name = "Transaction Reader",
         description = "Reads a transaction file, parses each line for SKU, quantity, price, and description, " +

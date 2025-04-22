@@ -1,10 +1,10 @@
 package me.hubailmn.Labs.Lab1;
 
-import me.hubailmn.utils.Exercises;
+import me.hubailmn.utils.Exercise;
 
 import java.util.Scanner;
 
-@Exercises(
+@Exercise(
         exercise = 1,
         name = "Sum of Array Elements",
         description = "Prompts the user to enter a specified number of numeric values, stores them in an array, " +

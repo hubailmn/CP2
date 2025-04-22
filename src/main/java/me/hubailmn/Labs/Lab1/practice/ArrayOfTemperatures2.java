@@ -1,10 +1,10 @@
 package me.hubailmn.Labs.Lab1.practice;
 
-import me.hubailmn.utils.Exercises;
+import me.hubailmn.utils.Exercise;
 
 import java.util.Scanner;
 
-@Exercises(
+@Exercise(
         name = "Dynamic Array of Temperatures",
         description = "Prompts the user to specify how many daily temperatures to enter, calculates the average, " +
                 "and displays whether each temperature is above, below, or equal to the average."

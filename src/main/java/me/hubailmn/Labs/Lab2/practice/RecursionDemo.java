@@ -1,10 +1,10 @@
 package me.hubailmn.Labs.Lab2.practice;
 
-import me.hubailmn.utils.Exercises;
+import me.hubailmn.utils.Exercise;
 
 import java.util.Scanner;
 
-@Exercises(
+@Exercise(
         name = "Recursion Digit to Word Converter",
         description = "Prompts the user to enter an integer, then recursively converts and displays each digit as a word. " +
                 "Also displays the digits of the number increased by ten using the same recursive method."

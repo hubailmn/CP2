@@ -1,10 +1,10 @@
 package me.hubailmn.Labs.Lab1;
 
-import me.hubailmn.utils.Exercises;
+import me.hubailmn.utils.Exercise;
 
 import java.util.Scanner;
 
-@Exercises(
+@Exercise(
         exercise = 2,
         name = "Cash Out Calculator",
         description = "Simulates a simple cashier system where the user enters item prices, calculates the total cost, " +

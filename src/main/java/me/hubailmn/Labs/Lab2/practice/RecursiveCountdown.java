@@ -1,8 +1,8 @@
 package me.hubailmn.Labs.Lab2.practice;
 
-import me.hubailmn.utils.Exercises;
+import me.hubailmn.utils.Exercise;
 
-@Exercises(
+@Exercise(
         name = "Recursive Countdown",
         description = "Demonstrates a simple recursive method that counts down from a given number to 1 and prints each step."
 )

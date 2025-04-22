@@ -1,10 +1,10 @@
 package me.hubailmn.Labs.Lab2;
 
-import me.hubailmn.utils.Exercises;
+import me.hubailmn.utils.Exercise;
 
 import java.util.Scanner;
 
-@Exercises(
+@Exercise(
         exercise = 2,
         name = "Recursive Factorial Calculation",
         description = "Prompts the user for a number and uses recursion to calculate and display its factorial."

@@ -1,13 +1,13 @@
 package me.hubailmn.Labs.Lab3.output;
 
-import me.hubailmn.utils.Exercises;
+import me.hubailmn.utils.Exercise;
 import me.hubailmn.utils.ProjectUtil;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-@Exercises(
+@Exercise(
         exercise = 3,
         name = "Text File Output Demo",
         description = "Prompts the user to input three lines of text and writes them to a file, each line prefixed with a number. " +

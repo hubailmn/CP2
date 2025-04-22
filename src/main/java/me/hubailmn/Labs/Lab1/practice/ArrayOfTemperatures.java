@@ -1,10 +1,10 @@
 package me.hubailmn.Labs.Lab1.practice;
 
-import me.hubailmn.utils.Exercises;
+import me.hubailmn.utils.Exercise;
 
 import java.util.Scanner;
 
-@Exercises(
+@Exercise(
         name = "Average weekly Temperature",
         description = "Prompts the user to enter daily temperatures for a week, calculates the weekly average, " +
                 "and displays whether each day's temperature is above, below, or equal to the average."

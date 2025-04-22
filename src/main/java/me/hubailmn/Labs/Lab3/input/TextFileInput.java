@@ -1,13 +1,13 @@
 package me.hubailmn.Labs.Lab3.input;
 
-import me.hubailmn.utils.Exercises;
+import me.hubailmn.utils.Exercise;
 import me.hubailmn.utils.ProjectUtil;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-@Exercises(
+@Exercise(
         exercise = 1,
         name = "User-Specified Text File Reader",
         description = "Prompts the user to enter a file name, reads the specified text file line by line, and prints its contents. " +

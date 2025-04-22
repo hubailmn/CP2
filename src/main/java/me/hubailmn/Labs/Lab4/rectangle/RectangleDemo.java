@@ -1,8 +1,8 @@
 package me.hubailmn.Labs.Lab4.rectangle;
 
-import me.hubailmn.utils.Exercises;
+import me.hubailmn.utils.Exercise;
 
-@Exercises(
+@Exercise(
         name = "Rectangle Class Demonstration",
         description = "Demonstrates the use of a custom Rectangle class by setting its length and width, " +
                 "then calculating and displaying its area. This exercise reinforces object-oriented programming concepts " +

@@ -1,13 +1,13 @@
 package me.hubailmn.Labs.Lab3.input;
 
-import me.hubailmn.utils.Exercises;
+import me.hubailmn.utils.Exercise;
 import me.hubailmn.utils.ProjectUtil;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-@Exercises(
+@Exercise(
         exercise = 2,
         name = "Text File Input Demo",
         description = "Reads a text file line by line using a Scanner, printing its contents to the console. " +

@@ -1,8 +1,8 @@
 package me.hubailmn.Labs.Lab1;
 
-import me.hubailmn.utils.Exercises;
+import me.hubailmn.utils.Exercise;
 
-@Exercises(
+@Exercise(
         exercise = 3,
         name = "Printing Array Elements",
         description = "Initializes an array of integers and prints each element using an enhanced for-loop."

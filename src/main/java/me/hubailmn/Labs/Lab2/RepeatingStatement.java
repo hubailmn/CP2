@@ -1,10 +1,10 @@
 package me.hubailmn.Labs.Lab2;
 
-import me.hubailmn.utils.Exercises;
+import me.hubailmn.utils.Exercise;
 
 import java.util.Scanner;
 
-@Exercises(
+@Exercise(
         exercise = 1,
         name = "Repeating Statement Recursively",
         description = "Uses recursion to print 'Hello World' a specified number of times based on user input."

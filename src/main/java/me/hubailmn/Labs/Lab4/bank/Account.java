@@ -1,9 +1,9 @@
 package me.hubailmn.Labs.Lab4.bank;
 
 import me.hubailmn.utils.CC;
-import me.hubailmn.utils.Exercises;
+import me.hubailmn.utils.Exercise;
 
-@Exercises(
+@Exercise(
         name = "Bank Account Simulation (OOP)",
         description = "Demonstrates basic object-oriented programming principles by simulating a bank account system. " +
                 "The program creates an instance of a bank account, sets its attributes (account number | owner | balance), " +
