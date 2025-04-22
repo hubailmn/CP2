@@ -1,8 +1,8 @@
 package me.hubailmn.Labs.Lab2;
 
-import me.hubailmn.utils.Exercises;
+import me.hubailmn.utils.Exercise;
 
-@Exercises(
+@Exercise(
         exercise = 3,
         name = "Recursive Range Printer",
         description = "Prints all integers in a specified range using recursion, starting from a given number up to an end number."

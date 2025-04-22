@@ -1,8 +1,8 @@
 package me.hubailmn.Labs.Lab4.dog;
 
-import me.hubailmn.utils.Exercises;
+import me.hubailmn.utils.Exercise;
 
-@Exercises(
+@Exercise(
         name = "Dog Class and Age Conversion",
         description = "Introduces object-oriented programming by modeling a dog with attributes such as name, breed, and age. " +
                 "Includes a method to convert the dog's age from calendar years to human-equivalent years using a standard formula. " +
