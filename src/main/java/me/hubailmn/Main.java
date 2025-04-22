@@ -5,6 +5,7 @@ import me.hubailmn.utils.Exercises;
 import me.hubailmn.utils.StringFormat;
 import org.reflections.Reflections;
 import org.reflections.scanners.SubTypesScanner;
+import org.reflections.scanners.TypeAnnotationsScanner;
 import org.reflections.util.ConfigurationBuilder;
 
 import java.lang.reflect.Method;
@@ -30,10 +31,10 @@ public class Main {
         Reflections reflections = new Reflections(
                 new ConfigurationBuilder()
                         .forPackages("me.hubailmn.Labs")
-                        .addScanners(new SubTypesScanner(false))
+                        .addScanners(new TypeAnnotationsScanner(), new SubTypesScanner(false))
         );
 
-        Set<Class<?>> allClasses = reflections.getSubTypesOf(Object.class);
+        Set<Class<?>> allClasses = reflections.getTypesAnnotatedWith(Exercises.class);
         Map<String, List<Class<?>>> packageToClasses = new TreeMap<>();
 
         for (Class<?> clazz : allClasses) {
@@ -71,7 +72,14 @@ public class Main {
 
             for (Class<?> clazz : entry.getValue()) {
                 indexedClasses.add(clazz);
-                String formattedName = StringFormat.formatClassName(clazz.getSimpleName());
+
+                String className = clazz.getSimpleName();
+                if (clazz.isAnnotationPresent(Exercises.class)) {
+                    Exercises exercisesAnnotation = clazz.getAnnotation(Exercises.class);
+                    className = exercisesAnnotation.name();
+                }
+
+                String formattedName = StringFormat.formatClassName(className);
                 System.out.printf("     %s[%d] %s%s%n", CC.BRIGHT_GREEN, index, CC.BRIGHT_BLUE, formattedName + CC.RESET);
 
                 index++;
