@@ -6,7 +6,10 @@ import java.util.Scanner;
 
 @Exercise(
         name = "Pet (OOP with constructor)",
-        description = ""
+        description = "Demonstrates object-oriented programming concepts with constructors by managing pet information. " +
+                "The program creates a pet object with initial data, displays the current information, " +
+                "and allows users to update the pet's name, age, and weight through console input. " +
+                "Finally, it shows the updated pet information."
 )
 public class PetDemo {
 

@@ -4,7 +4,10 @@ import me.hubailmn.utils.Exercise;
 
 @Exercise(
         name = "Rectangle (OOP with constructor)",
-        description = ""
+        description = "Demonstrates object-oriented programming concepts using a Rectangle class. " +
+                "The program creates a rectangle object with specified dimensions (length and width) " +
+                "and calculates its area and perimeter using the constructor and methods. " +
+                "It showcases basic OOP principles including object instantiation and method invocation."
 )
 public class RectangleDemo {
 

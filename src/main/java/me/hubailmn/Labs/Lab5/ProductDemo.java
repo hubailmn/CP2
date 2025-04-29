@@ -4,7 +4,10 @@ import me.hubailmn.utils.Exercise;
 
 @Exercise(
         name = "Product (OOP with constructor )",
-        description = ""
+        description = "Demonstrates object creation and manipulation using a Product class with constructors. " +
+                "Creates multiple product instances with varying properties (name, price, quantity), " +
+                "shows input validation for negative values, and illustrates property modification using setter methods. " +
+                "The program displays the state of each product after creation and updates."
 )
 public class ProductDemo {
 

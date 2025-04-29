@@ -6,7 +6,9 @@ import java.util.Scanner;
 
 @Exercise(
         name = "Dimension Converter",
-        description = ""
+        description = "This program demonstrates dimension conversion between inches and feet. " +
+                "It allows users to input measurements in inches to convert to feet, and measurements in feet to convert to inches. " +
+                "The program uses the DimensionConverter utility class to perform the conversions and displays the results to the user."
 )
 public class DimensionConverterDemo {
 
