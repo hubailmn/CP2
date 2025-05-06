@@ -1,0 +1,31 @@
+package me.hubailmn.programming.two.Lab5.dimension;
+
+import me.hubailmn.utils.Exercise;
+
+import java.util.Scanner;
+
+@Exercise(
+        name = "Dimension Converter",
+        description = "This program demonstrates dimension conversion between inches and feet. " +
+                "It allows users to input measurements in inches to convert to feet, and measurements in feet to convert to inches. " +
+                "The program uses the DimensionConverter utility class to perform the conversions and displays the results to the user."
+)
+public class DimensionConverterDemo {
+
+    public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
+
+        System.out.print("Enter a measurement in inches: ");
+        double inches = keyboard.nextDouble();
+
+        double feet = DimensionConverter.convertInchesToFeet(inches);
+        System.out.println(inches + " inches = " + feet + " feet.");
+
+        System.out.print("Enter a measurement in feet: ");
+        feet = keyboard.nextDouble();
+
+        inches = DimensionConverter.convertFeetToInches(feet);
+        System.out.println(feet + " feet = " + inches + " inches.");
+    }
+
+}
