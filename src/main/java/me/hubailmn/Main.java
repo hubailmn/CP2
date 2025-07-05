@@ -30,7 +30,7 @@ public class Main {
     private static void Menu() {
         Reflections reflections = new Reflections(
                 new ConfigurationBuilder()
-                        .forPackages("me.hubailmn.Labs")
+                        .forPackages("me.hubailmn.programming")
                         .addScanners(new TypeAnnotationsScanner(), new SubTypesScanner(false))
         );
 
